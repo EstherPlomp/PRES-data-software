@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Open Science Crash Course</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Esther Plomp" />
+    <meta name="date" content="2022-03-11" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/OSC-data-software.jpg")
+background-position: 80% 80%
+background-size: 40%
+
+## Open Science: Crash Course
+
+#### Open Data/Software: What, when, how?
+
+Slides by [**Esther Plomp**](https://estherplomp.github.io/) @ TU Delft, Faculty of Applied Sciences
+
+License: CC-BY
+
+[Link slides](https://estherplomp.github.io/PRES-data-software/)
+
+---
+
+class: inverse, center, middle
+
+# Open Science
+
+---
+# Open Science
+
+.pull-left[
+![TU Delft Open Science logo](https://d2k0ddhflgrk1i.cloudfront.net/Library/Themaportalen/Open.tudelft.nl/Homepage/OS_homepage_infographic_3.png)]
+
+
+.pull-right[
+**Open Data**
+
+**Open Software**
+
+**Open Education**
+
+**Open Hardware**
+
+**Open Methods**
+
+**Open Publishing**
+
+**Collaboration (community, inclusion)**
+
+**Citizen Science**
+]
+
+.footnote[[tudelft.nl/openscience](https://www.tudelft.nl/open-science)]
+
+
+---
+class: inverse, middle, center
+
+# Open Data
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/data-management-plan.jpg")
+background-position: 80% 80%
+background-size: 50%
+
+
+# Planning for Open Data
+
+**Data Management Plan (DMP)** to plan how to manage and share the data (see [The Turing Way for more information](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-dmp.html))
+
+TU Delft has access to [DMPonline](dmponline.tudelft.nl/) with TU Delft specific templates and guidance
+
+.footnote[image by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)]
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/tidydata_3-small.jpg")
+background-position: 100% 100%
+background-size: 80%
+
+
+# Data Organisation
+
+.footnote[Image by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)]
+
+
+---
+
+## File naming
+- 20220113-PRES-Data-V001
+- [8 step guide](https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247) on how to set up your file naming convention
+- [Presentation on file naming](https://speakerdeck.com/jennybc/how-to-name-files)
+- [Stanford’s best practices](https://library.stanford.edu/research/data-management-services/data-best-practices/best-practices-file-naming)
+
+--
+
+## Folder structure
+- Templates by [Colomb et al.](https://doi.org/10.5281/zenodo.4410128), [Nikola](http://nikola.me/folder_structure.html) and [Barbara Vreede](https://github.com/bvreede/good-enough-project) for [cookiecutter](https://github.com/cookiecutter/cookiecutter)
+- [Find Files Faster](https://zapier.com/blog/organize-files-folders/): How to Organize Files and Folders
+- [Data Management: File organisation](https://surfdrive.surf.nl/files/index.php/s/gJtISAQABapLvnI) by Christine Malinowski
+- [Videos on project structure](https://www.youtube.com/watch?v=u6MiDFvAs9w&amp;list=PLRPB0ZzEYegPiBteC2dRn95TX9YefYFyy&amp;index=2) by Danielle Navarro
+- Software: [Cookiecutter template by Barbara Vreede](https://github.com/bvreede/good-enough-project) based on [Wilson 2017](https://doi.org/10.1371/journal.pcbi.1005510)
+
+
+---
+
+# Data Organisation
+
+.pull-left[
+[![Friends meme on how Excel changes everything to a date](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/excel-dates.jpg)](https://twitter.com/mdancho84/status/1426970168660529153)]
+
+.pull-right[
+## Spreadsheets
+
+- [Spreadsheet organisation tips](https://surfdrive.surf.nl/files/index.php/s/9aNX69fsWyAnMI8)
+- [Broman and Woo 2018](https://doi.org/10.1080/00031305.2017.1375989)
+- [Wickham 2014](https://vita.had.co.nz/papers/tidy-data.html)
+- Use tools for data validation like [OpenRefine](https://openrefine.org/)
+
+## Why? What could possibly go wrong? 
+- [a lot](http://www.eusprig.org/horror-stories.htm)
+]
+
+---
+
+# Data Documentation
+
+.pull-left[
+[![A pan filled with spaggethi on fire with the text: skimmed the protocol](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/skimmed-protocol.jpg)](https://twitter.com/thecrobe/status/1373590641012322306)]
+
+.pull-right[
+- (electronic) Labnotes: TU Delft provides [licenses for eLABjournal and Rspace](https://www.tudelft.nl/en/library/research-data-management/r/manage/electronic-lab-notebook)
+- Readme files ([template](https://cornell.app.box.com/v/ReadmeTemplate))
+- [Guide for data documentation](https://doi.org/10.5281/zenodo.1914401)
+- [Data Dictionary](https://uf-repro.github.io/data-organization/slides.html)
+- [Code Book](https://libguides.library.kent.edu/SPSS/Codebooks)
+
+#### More information
+- Book: Data Management for Researchers by Kristin Briney 
+- [A Quick Guide to Organizing Computational Biology Projects](https://doi.org/10.1371/journal.pcbi.1000424) by William Noble
+- [Some Simple Guidelines for Effective Data Management](https://doi.org/10.1890/0012-9623-90.2.205) by Borer et al.
+]
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/fountain-of-open-data.jpg")
+background-position: 100% 100%
+background-size: 40%
+
+# Open Data
+
+made freely available for use and re-use by anyone and everyone
+
+**Access** : Available (on the internet) to all on demand
+
+**Reuse/distribution** : Provided under terms that permit reuse and redistribution
+
+**Transparency** : Providing information about data generation/collection
+
+**Interoperability** : Interoperability with other data, machine readable formats
+
+**Participation** : Everyone must be able to use, reuse and redistribute
+
+**Equity** : Data is not truly open if the research process is not open to all
+
+.footnote[
+[#bropenscience is broken science](https://thepsychologist.bps.org.uk/volume-33/november-2020/bropenscience-broken-science) by Kirstie Whitaker and Olivia Guest
+
+[Open Science Beyond Open Access: For and with communities](https://doi.org/10.5281/zenodo.3946773)
+
+image by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)]
+
+---
+
+# Not Open Data
+
+.pull-left[
+[![Data being available upon request, with Agnes winking very obviously](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/upon-request.jpg)](https://twitter.com/MadS100tist/status/1366103674989277185)
+]
+
+.pull-right[
+'[odds of obtaining the dataset] fell by 17% per year' [Vines et al. 2014](https://doi.org/10.1016/j.cub.2013.11.014)
+
+‘research data cannot be reliably preserved by individual researchers’ - [Vines et al. 2014](https://doi.org/10.1016/j.cub.2013.11.014)
+
+"We received no response to 41.3% of our data requests" - [Tedersoo et al. 2021](https://doi.org/10.1038/s41597-021-00981-0)
+
+[Meme explanation](https://knowyourmeme.com/memes/agnes-harkness-winking)
+]
+
+---
+
+# Open Data
+
+.pull-left[
+[![A tree with various pieces of documention in the branches and the text Repositree](https://pbs.twimg.com/media/EVzdm1nXQAI1fY_?format=jpg&amp;name=900x900)](https://twitter.com/ErrantScience/status/1251118457279647746)
+]
+
+.pull-right[
+## data repository
+online archive that curates research datasets and provides long-term access
+- Finalised datasets
+- ~10-15 years (Long term preservation)
+- Access
+- DOI = more citations/visibility
+- File format support
+
+[How can you make research data accessible?](https://www.software.ac.uk/how-can-you-make-research-data-accessible) by Esther Plomp]
+
+---
+
+# Open Data
+
+.pull-left[
+[![A tree with various pieces of documention in the branches and the text Repositree](https://pbs.twimg.com/media/EVzdm1nXQAI1fY_?format=jpg&amp;name=900x900)](https://twitter.com/ErrantScience/status/1251118457279647746)
+]
+
+.pull-right[
+## How to find a repository? 
+- Check publications in your field
+- [FAIRsharing](https://fairsharing.org/)
+- [re3data](https://www.re3data.org/)
+
+General repositories:
+- [4TU.ResearchData](https://researchdata.4tu.nl/en/)
+- [Zenodo](https://zenodo.org/)
+]
+
+---
+
+# Open Data
+
+A **Data Article** (also known as a Data Paper/Note/Release, or Database article) is a publication that is focused on the description of a dataset. 
+
+More information on [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-article.html) and [TU Delft specific information](https://openworking.wordpress.com/2022/02/17/publishing-a-data-article/)
+
+
+---
+class: inverse, middle, center
+
+# Open Software
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/recognition.jpg")
+background-position: 100% 100%
+background-size: 50%
+
+#Open Software
+
+Software in which the copyright holder has granted a license to **use, study, change, and/or distribute the source code.** - [opensource.org](https://opensource.org/definition)
+
+Sharing Software allows for 
+- Scrutiny of methods / increased **reproducibility**
+  - see [Krafczyk et al. 2021](https://doi.org/10.1098/rsta.2020.0069) p5-11 for recommendations
+- **Collaboration**
+- **Credit**
+
+See also: [Making software FAIR?](https://openworking.wordpress.com/2019/12/16/making-software-fair/) for more resources
+
+.footnote[image by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)]
+
+---
+
+# Version control
+
+Version control allows you to **easily track changes**, both your own changes as well as those made by collaborators (for example, Git)
+
+By configuring your version control system to use GitHub, GitLab or Bitbucket, you’ll have **backups** of every version. Follow this [webinar for an introduction to GitHub](https://www.youtube.com/watch?v=lRW8mlpTw5M). You can also use [TU Delft GitLab](https://gitlab.tudelft.nl/).
+
+These platforms offer **collaboration tools** (issue tracker and project management tools), and you’ll be able to use third-party **services** such as code quality checkers, correctness checkers.
+
+
+image by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)
+[![Version control allows you to easily access different versions of the same file](https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/VersionControl.jpg)](https://doi.org/10.5281/zenodo.3332807)
+]
+
+
+---
+
+# Also useful if you do not code
+
+- Working together on projects ([Open Life Science](https://github.com/open-life-science/open-life-science.github.io), [The Turing Way](https://github.com/alan-turing-institute/the-turing-way))
+  - [Live demo of collaborative working](https://youtu.be/KUgPlJIM6-E?t=1484) without code on GitHub
+- Setting up your website (see [Esther’s website](https://estherplomp.github.io/))
+- Making your work available to others (slides, [newsletters](https://github.com/EstherPlomp/TNW-PhD-Newsletters ))
+- Keeping track of other projects (stars)
+- Project management tools ([Project Boards](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards), [Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues))
+
+---
+
+# README
+
+- Landing page for your repo (watch [this video](https://www.youtube.com/watch?v=Jgv34Kwgga8&amp;list=PL1CvC6Ez54KDvJbbdLn5rPvf1kInifEh9&amp;index=7) for more info)
+- The 'Abstract' of your project
+- Who is involved in the project?
+- Invitation to others to contribute (what expertise is needed?)
+- On GitHub this is rendered in Markdown (language to format text)
+  - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  - [Emoji cheatsheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+
+### Examples:
+- [Jupyter](https://github.com/jupyter/jupyter#readme) &amp; [scikit-learn](https://github.com/scikit-learn/scikit-learn) (written in Python)
+- [Matpower](https://github.com/MATPOWER/matpower) (written in MATLAB)
+- [Examples and explanation by Alex Chan](https://alexwlchan.net/2021/10/readmes-for-open-science/)
+- [Figures underlying Esther's article](https://github.com/EstherPlomp/Figures-Nd-data) 
+- Templates: [#1](https://ha0ye.github.io/CW21-README-tips/template_README.html),[#2](https://github.com/othneildrew/Best-README-Template)
+
+---
+
+# Getting a DOI for your GitHub Repository
+
+Summary of this [guide](https://guides.github.com/activities/citable-code/)
+1. Have a repository in mind that you’re creating the identifier for
+1. Set up an account at [Zenodo](https://zenodo.org/) (using your GitHub, email or [ORCID](https://orcid.org/))
+1. Connect GitHub/Zenodo by authorizing Zenodo
+1. On Zenodo, go to Settings -&gt; GitHub, then toggle the button on for the repository that you want an identifier for
+1. On GitHub: create a new release for your repository (snapshot that will be preserved on Zenodo)
+1. On Zenodo: go to the Upload tab and add any additional information before publishing. 
+1. On GitHub you can update your citation file with the DOI and add a DOI button in your Readme file
+
+![](https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/doi-repository.jpg)
+
+---
+
+# Software Citation 
+
+
+- Create a new file in your repository, name it CITATION.cff, select insert example, and fill out the template: 
+
+![](https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/citationcff-make.jpg)
+
+![](https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/citationcff-result.jpg) More information: [The Turing Way](https://the-turing-way.netlify.app/communication/citable/citable-cff.html) / [video](https://youtu.be/6yhuHCEjPNU) (&amp; [slides](http://doi.org/10.5281/zenodo.4706180)) with tips
+
+---
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/software-publishing.jpg")
+background-position: 50% 50%
+background-size: 90%
+
+# Options for software sharing/publishing
+
+
+.footnote[ Slide by: Chue Hong, Neil (2021): Doing Science in the Digital Age (a personal journey as a data explorer). https://doi.org/10.6084/m9.figshare.17094365.v1 CC BY 4.0 ]
+
+---
+# Checklist for software sharing
+
+- Have I assigned an **appropriate license** to my software?
+- Have I **described my software properly**, using an appropriate metadata format, and included this metadata file with my software?
+  - Have I given my software a clear **version number**?
+  - Have I determined the **authors to be credited** for this release of my software, and included this in my metadata file?
+- Have I procured a **persistent identifier** for this release of my software?
+- Have I added my **recommended citation** to the documentation for my software?
+
+
+####  Checklist for developers: https://doi.org/10.5281/zenodo.3482769 
+
+
+.footnote[ Slide by: Chue Hong, Neil (2021): Doing Science in the Digital Age (a personal journey as a data explorer). https://doi.org/10.6084/m9.figshare.17094365.v1 CC BY 4.0 ]
+
+---
+
+# If you’re reusing Software of others
+- Have I **identified the software** which makes a significant and specialised contribution to my academic work?
+- Have I checked if the software has a **recommended citation**?
+  - If this is to a paper, have I also cited the software directly?
+  - If there’s no recommended citation, have I **created as complete a citation as possible**?
+      - Who created the software
+      - When it was created
+      - Title of the software (and version if available)
+      - Where the software can be accessed
+- Have I **referenced the software appropriately** in my academic work, complying with any citation formatting guidelines?
+
+#### Checklist for authors: https://doi.org/10.5281/zenodo.3479199
+
+.footnote[ Slide by: Chue Hong, Neil (2021): Doing Science in the Digital Age (a personal journey as a data explorer). https://doi.org/10.6084/m9.figshare.17094365.v1  CC BY 4.0 ]
+
+
+---
+class: inverse, middle, center
+
+# Why not supplemental materials?
+
+---
+# Why not supplemental materials? 
+
+**Data control**: cannot be updated 
+
+**Interoperability**: not available in all formats which makes it difficult to integrate and interact with the data
+
+**Availability**: Difficult to access if the article is behind the paywall (supplemental materials are not included in the DOI and therefore the links can also break!)
+
+**Impact**: Data should be a primary research output
+
+**Publisher requirements**: Some publishers recommend using a data repository instead
+
+**Not FAIR**: Data/Software available in supplemental materials is not considered to be [FAIR](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-fair.html) (Findable, Accessible, Interoperable, Resuable)
+
+See also: [The Push to Replace Journal Supplements with Repositories](https://www.the-scientist.com/news-opinion/the-push-to-replace-journal-supplements-with-repositories--66296) 
+
+---
+
+layout: false
+
+## Sustainable access to data/code
+
+&lt;center&gt;&lt;img src="https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/commercial-infrastructure.jpg" alt="Two godzilla monsters are asking people for their time and money while if you take the open source way you can access digital infrastructure more sustainably" height="500px" /&gt;&lt;/center&gt;
+
+.footnote[image by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)]
+
+---
+class: inverse, middle, center
+
+# Licenses
+
+---
+# Licenses
+
+.pull-left[
+![](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/cc-overview.jpg)
+]
+
+.pull-right[
+## Data
+[Creative Commons License Chooser](https://chooser-beta.creativecommons.org/)
+
+## Software
+[Choose an open source license](https://choosealicense.com/)
+
+####[Video on licenses](https://www.youtube.com/watch?v=xdBwuut6dRY&amp;list=PL1CvC6Ez54KDvJbbdLn5rPvf1kInifEh9&amp;index=5)
+]
+
+
+.footnote[Image [Source](https://foter.com/blog/how-to-attribute-creative-commons-photos/): CC-BY-SA]
+
+---
+
+# Software Licenses
+.pull-left[
+
+##Permissive
+
+Open licenses that do not require derivative works to shared with the same license.
+
+###Examples:
+- CC BY
+- MIT, BSD, APL-2.0
+
+#### [TU Delft approved licenses](https://docs.google.com/presentation/d/1jYrjZMjuZ5RchjIC97JfLPvClnzfzbGTq0KnXk_zp10/) according to the [TU Delft Research Software Policy](http://doi.org/10.5281/zenodo.4629662) and [Guidelines](http://doi.org/10.5281/zenodo.4629635)
+
+]
+
+.pull-right[
+##Copyleft
+
+Open licenses that require all derivative works to be shared with the same license.
+
+###Examples:
+- CC BY-SA
+- GPLv3, AGPL, LGPL, EUP]
+
+---
+
+# Sharing software according to TU Delft
+
+Choose a pre-approved license (MIT, BSD, Apache, GPL, AGPL, LGPL, EUPL, CC0)
+
+#### Use [4TU.ResearchData](https://researchdata.4tu.nl/en/)
+- Log in (top right) using TU Delft credentials
+- Create a new item or import from GitHub/GitLab
+- Add relevant metadata in the information fields
+
+#### OR
+
+####Use another repository ([Zenodo](https://zenodo.org/)) AND register the software in [PURE](https://pure.tudelft.nl/admin/)
+- Log in using TU Delft credentials
+- Select Datasets/Software -&gt; Software
+- Fill out the metadata in the information fields and add DOI, select license and save the information
+
+.footnote[Full [slidedeck](http://doi.org/10.5281/zenodo.4772235) + [recording](https://youtu.be/bPl5sdTvLMM?t=1394) of how to publish software (from 23:14 onwards)]
+
+---
+class: inverse, middle, center
+
+# How to link your publication and data/code?
+
+---
+
+# How to link your publication and data/code?
+
+- Publish the output before you publish the article
+
+OR
+
+- Reserve the DOI 
+
+## Use the DOI/citation in your publication
+
+Reference your data in the **Data Availability Statement** and the **References** 
+
+
+.footnote[ [The Turing Way: Linking Research Objects](https://the-turing-way.netlify.app/communication/citable/citable-linking.html)
+]
+
+---
+# Publish or reserving a DOI 
+
+### [Zenodo](https://zenodo.org/) -&gt; [Upload](https://zenodo.org/deposit/) -&gt; [New Upload](https://zenodo.org/deposit/new) 
+
+![](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/data-zenodo-doi.jpg)
+
+
+
+---
+# Linking with publication
+
+### Data accessibility/within table (descriptions)
+
+[![A data accessibility table with information where the research outputs can be found](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/data-accessibility.jpg)](https://doi.org/10.1016/j.dib.2021.107375)
+
+### Data availability statements (at the end)
+
+[![Example of a data availability statement](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/data-availability-statement.jpg)](https://doi.org/10.1002/ajpa.24059)
+
+---
+
+# Linking with publication
+
+![](https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/data-references.jpg)
+
+Always check the dataset's readme file or metadata on how the contributors prefer to be cited!
+
+See [this document](https://surfdrive.surf.nl/files/index.php/s/IJt6nPbRf0G9zYZ) for more information about data/software citation.
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/2022-PRES-Data/main/images/schmid-2021.jpg")
+background-position: 50% 50%
+background-size: 50%
+
+# Linking data/code/publication
+.footnote[ [Publication](https://doi.org/10.1038/s41565-021-00958-5) // [Data &amp; Code](https://doi.org/10.5281/zenodo.5059802)]
+
+---
+class: inverse, middle, center
+
+# Where next? 
+---
+
+#Where next? 
+
+### **[TU Delft Open Science Community](https://osc-delft.github.io/)**
+&gt; [Sign up](https://osc-delft.github.io/join) for a 2-monthly newsletter, Slack channel and visibility on the website.
+
+### **[Open Life Science Programme](https://openlifesci.org/)**
+&gt;  PhD candidates can follow this programme for 5 disciplinary specific credits. See [intranet](https://intranet.tudelft.nl/-/open-life-science-programme) for more information. New applications will open over the summer with the programme taking place around September-December. 
+
+### **[The Turing Way](https://the-turing-way.netlify.app/welcome)**
+
+&gt; There will be an online/hybrid event to contribute to the Turing Way in May/June. Contact Esther for more information.
+
+---
+
+background-image: url("https://raw.githubusercontent.com/EstherPlomp/PRES-data-software/main/images/thank-you.jpg")
+background-position: 5% 2%
+background-size: 40%
+
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)&lt;br&gt;
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+[remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)
+
+images by [The Turing Way](https://doi.org/10.5281/zenodo.3332807)
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
